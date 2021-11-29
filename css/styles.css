@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  position: relative;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+body h1 {
+  font-family: "Quicksand", sans-serif;
+}
+body .login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+body .login .form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+  justify-items: center;
+}
+body .login .form-container .logo-tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .login .form-container .logo {
+  width: 150px;
+  margin-bottom: 30px;
+  justify-self: center;
+  display: none;
+}
+body .login .form-container .title {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+body .login .form-container .subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: start;
+  color: #C7C7C7;
+}
+body .login .form-container .form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+}
+body .login .form-container .form .label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+body .login .form-container .form div {
+  display: flex;
+  flex-direction: column;
+}
+body .login .form-container .form .privacy-policy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+body .login .form-container .form .input {
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+body .login .form-container .form .input .input-email {
+  margin-bottom: 22px;
+}
+body .login .form-container .form .input .input-password {
+  margin-bottom: 22px;
+}
+body .login .form-container .form a {
+  color: #ACD9B2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 52px;
+}
+body .login .form-container .my-account div p {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  color: #C7C7C7;
+}
+body .login .form-container .email-img {
+  width: 132px;
+  height: 132px;
+  background: #F7F7F7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+body .login .form-container .email-img img {
+  width: 80px;
+}
+body .login .form-container .primary-button {
+  background-color: #ACD9B2;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+}
+body .login .form-container .login-button {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+body .login .form-container .secuandary-button {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #ACD9B2;
+  color: #ACD9B2;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+}
+body .login .form-container .signup-button {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+body .login .resend {
+  font-size: 14px;
+}
+body .login .resend span {
+  color: #C7C7C7;
+}
+body .login .resend a {
+  color: #ACD9B2;
+  text-decoration: none;
+}
+
+body .desktop-menu {
+  width: 150px;
+  height: auto;
+  border: 1px solid #C7C7C7;
+  border-radius: 6px;
+  padding: 20px 20px 0 20px;
+}
+body .desktop-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body .desktop-menu ul li {
+  text-align: end;
+}
+body .desktop-menu ul li a {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+body .desktop-menu ul li:last-child {
+  padding-top: 20px;
+  border-top: 1px solid #C7C7C7;
+}
+body .desktop-menu ul li:last-child a {
+  color: #ACD9B2;
+  font-size: 14px;
+  font-weight: normal;
+}
+body .mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  padding: 24px;
+}
+body .mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+body .mobile-menu ul li {
+  margin-bottom: 24px;
+}
+body .mobile-menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+body .mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid #C7C7C7;
+}
+body .mobile-menu ul:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+}
+body .mobile-menu .email-menu {
+  font-size: 14px;
+  font-weight: 300;
+}
+body .mobile-menu .sign-out-menu {
+  color: #ACD9B2;
+  font-size: 14px;
+}
+body .main-container .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px;
+  place-content: center;
+}
+body .main-container .cards-container .product-card {
+  width: 240px;
+}
+body .main-container .cards-container .product-card img {
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .main-container .cards-container .product-card .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+body .main-container .cards-container .product-card .product-info figure {
+  margin: 0;
+}
+body .main-container .cards-container .product-card .product-info figure img {
+  width: 35px;
+  height: 35px;
+}
+body .main-container .cards-container .product-card .product-info div p:nth-child(1) {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+body .main-container .cards-container .product-card .product-info div p:nth-child(2) {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #C7C7C7;
+}
+body .my-order {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+body .my-order .my-order-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+body .my-order .my-order-container .title-my-order {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+body .my-order .my-order-container .my-order-content {
+  display: flex;
+  flex-direction: column;
+}
+body .my-order .my-order-container .my-order-content .order {
+  height: 60px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+  background-color: #F7F7F7;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+body .my-order .my-order-container .my-order-content .order p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+body .my-order .my-order-container .my-order-content .order p:nth-child(1) span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+}
+body .my-order .my-order-container .my-order-content .order p:nth-child(1) span:nth-child(2) {
+  font-size: 14px;
+  color: #C7C7C7;
+}
+body .my-order .my-order-container .my-order-content .order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+body .my-order .my-order-container .my-order-content .shopping-cart {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 14px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+body .my-order .my-order-container .my-order-content .shopping-cart figure {
+  margin: 0;
+}
+body .my-order .my-order-container .my-order-content .shopping-cart figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .my-order .my-order-container .my-order-content .shopping-cart p:nth-child(2) {
+  color: #C7C7C7;
+}
+body .my-order .my-order-container .my-order-content .shopping-cart p:nth-child(3) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  body .main-container .cards-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  body .main-container .cards-container .product-card {
+    width: 140px;
+  }
+  body .main-container .cards-container .product-card img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (max-width: 640px) {
+  body .tittle-create-account {
+    margin-top: 30px;
+  }
+  body .form-container {
+    height: 100%;
+  }
+  body .form {
+    height: 100%;
+    justify-content: space-between;
+  }
+  body .login .form-container .logo {
+    margin-top: 30px;
+    display: block;
+  }
+}/*# sourceMappingURL=styles.css.map */
